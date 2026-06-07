@@ -21,7 +21,7 @@
         <div class="container">
             <h2>About Me</h2>
 
-            <img src="profile.jpg" alt="My Photo" class="profile-img">
+            <img src="profile.png" alt="photo" class="profile-pic">
 
             <p>
                 Hello! I'm Shiva Rudhra, a passionate web developer and
@@ -92,8 +92,8 @@
         <div class="container">
             <h2>Contact Me</h2>
 
-            <p>Email: yourmail@example.com</p>
-            <p>Phone: +91 XXXXX XXXXX</p>
+            <p>Email: shivarudhra@example.com</p>
+            <p>Phone: +91 9876543210</p>
         </div>
     </section>
 
@@ -103,6 +103,169 @@
     </footer>
 
     <script src="script.js"></script>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:20px;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+section{
+    padding:60px 0;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d6efd;
+}
+
+.profile-img{
+    display:block;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:20px auto;
+    border:5px solid #0d6efd;
+}
+
+#about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.skill-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-list span{
+    background:#0d6efd;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+#projects{
+    background:white;
+}
+
+.project-card{
+    background:#f9f9f9;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    max-width:500px;
+    text-align:center;
+}
+
+.project-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.project-card h3{
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#0d6efd;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+#resume{
+    text-align:center;
+}
+
+#contact{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    .container{
+        width:90%;
+    }
+
+    .profile-img{
+        width:150px;
+        height:150px;
+    }
+}
+// Welcome Message
+
+window.onload = function () {
+    console.log("Portfolio Website Loaded Successfully!");
+};
+
+// Resume Download Alert
+
+const resumeBtn = document.querySelector(".btn");
+
+if (resumeBtn) {
+    resumeBtn.addEventListener("click", () => {
+        alert("Your resume download will start shortly.");
+    });
+}
 
 </body>
 </html>
