@@ -224,8 +224,7 @@ body {
     text-align: center;
     padding: 30px 20px;
     font-size: 14px;
-}
-// Wait for the DOM to load fully
+}// Wait for the DOM to load fully
 document.addEventListener("DOMContentLoaded", () => {
     
     const heroBtn = document.getElementById("hero-btn");
