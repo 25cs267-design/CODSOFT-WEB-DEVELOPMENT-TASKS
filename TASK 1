@@ -3,269 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Tech Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Navbar -->
     <header>
-        <div class="container">
-            <h1>Shiva Rudhra</h1>
-            <p>Web Developer | CodSoft Intern | Tech Enthusiast</p>
-        </div>
+        <nav class="navbar">
+            <div class="logo">TechBrand</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-
-            <img src="profile.png" alt="photo" class="profile-pic">
-
-            <p>
-                Hello! I'm Shiva Rudhra, a passionate web developer and
-                currently working as an Intern at CodSoft. I enjoy creating
-                responsive and user-friendly websites using HTML, CSS, and
-                JavaScript. I am constantly learning new technologies and
-                improving my development skills.
-            </p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Build Your Dream Website</h1>
+            <p>Create modern and responsive websites with HTML, CSS & JavaScript.</p>
+            <button id="startBtn">Get Started</button>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>My Skills</h2>
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creative and attractive website designs.</p>
+            </div>
 
-            <div class="skill-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-                <span>Java</span>
-                <span>Responsive Design</span>
-                <span>Git & GitHub</span>
+            <div class="card">
+                <h3>Development</h3>
+                <p>Fast and responsive web applications.</p>
+            </div>
+
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Improve your website visibility online.</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Landing Page</h3>
-                <p>
-                    Designed a responsive landing page using HTML and CSS
-                    with modern UI elements.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Calculator App</h3>
-                <p>
-                    Built a functional calculator using HTML, CSS, and
-                    JavaScript with interactive features.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume">
-        <div class="container">
-            <h2>Resume</h2>
-
-            <a href="resume.pdf" download class="btn">
-                Download Resume
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-
-            <p>Email: shivarudhra@example.com</p>
-            <p>Phone: +91 9876543210</p>
-        </div>
+    <!-- About -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            We help businesses create professional websites with modern
+            technologies and user-friendly designs.
+        </p>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Shiva Rudhra. All Rights Reserved.</p>
+    <footer id="contact">
+        <p>&copy; 2026 TechBrand. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+</body>
+</html>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
 }
 
 body{
-    background:#f4f4f4;
-    color:#333;
     line-height:1.6;
 }
 
-.container{
-    width:80%;
-    margin:auto;
-    padding:20px;
-}
-
-header{
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-
-header h1{
-    font-size:3rem;
-}
-
-header p{
-    margin-top:10px;
-    font-size:1.2rem;
-}
-
-section{
-    padding:60px 0;
-}
-
-h2{
-    text-align:center;
-    margin-bottom:30px;
-    color:#0d6efd;
-}
-
-.profile-img{
-    display:block;
-    width:200px;
-    height:200px;
-    object-fit:cover;
-    border-radius:50%;
-    margin:20px auto;
-    border:5px solid #0d6efd;
-}
-
-#about p{
-    text-align:center;
-    max-width:800px;
-    margin:auto;
-}
-
-.skill-list{
+.navbar{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.skill-list span{
-    background:#0d6efd;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111827;
     color:white;
-    padding:10px 20px;
-    border-radius:25px;
 }
 
-#projects{
-    background:white;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
-.project-card{
-    background:#f9f9f9;
-    margin:20px auto;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    max-width:500px;
-    text-align:center;
+.nav-links{
+    display:flex;
+    list-style:none;
 }
 
-.project-card img{
-    width:100%;
-    border-radius:10px;
+.nav-links li{
+    margin-left:20px;
 }
 
-.project-card h3{
-    margin:15px 0;
-}
-
-.btn{
-    display:inline-block;
-    background:#0d6efd;
+.nav-links a{
     color:white;
-    padding:12px 25px;
     text-decoration:none;
-    border-radius:5px;
     transition:0.3s;
 }
 
-.btn:hover{
-    background:#084298;
+.nav-links a:hover{
+    color:#38bdf8;
 }
 
-#resume{
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0284c7;
+}
+
+.services{
+    padding:70px 50px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+.services h2{
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.about{
+    padding:70px 50px;
     text-align:center;
 }
 
-#contact{
-    text-align:center;
+.about h2{
+    margin-bottom:20px;
 }
 
 footer{
-    background:#222;
+    background:#111827;
     color:white;
     text-align:center;
     padding:20px;
 }
+const button = document.getElementById("startBtn");
 
-/* Responsive */
-
-@media(max-width:768px){
-
-    header h1{
-        font-size:2rem;
-    }
-
-    .container{
-        width:90%;
-    }
-
-    .profile-img{
-        width:150px;
-        height:150px;
-    }
-}
-// Welcome Message
-
-window.onload = function () {
-    console.log("Portfolio Website Loaded Successfully!");
-};
-
-// Resume Download Alert
-
-const resumeBtn = document.querySelector(".btn");
-
-if (resumeBtn) {
-    resumeBtn.addEventListener("click", () => {
-        alert("Your resume download will start shortly.");
-    });
-}
-
-</body>
-</html>
+button.addEventListener("click", () => {
+    alert("Welcome! Thanks for exploring our website.");
+});
